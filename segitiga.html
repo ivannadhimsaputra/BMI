@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: yellow;
+            width: 50%;
+            padding: 50px;
+            margin: auto;
+            margin-top: 35px;
+
+        }
+
+        
+        .btn {
+            color: white;
+            background-color: darkorange;
+        }
+
+        input {
+            width: 50%;
+            height: 5%;
+            margin: auto;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h2>Segitiga Sama Sisi</h2></center>
+
+        <center><h3>Menghitung Segitiga</h3></center>
+
+        <label>Alas :</label>
+        <input type="number" name="alas" id="alas" required="" placeholder="Masukan Alas">
+
+        <br>
+        <label>Tinggi :</label>
+        <input type="number" name="tinggi" id="tinggi" required="" placeholder="Masukan tinggi">
+        
+        <label>luas :</label>
+        <input type="number" name="luas" id="luas" required="" placeholder="Masukan luas">
+        
+        <br>
+
+        <button onclick="hitung()" class="btn" type="button">Hitung</button>
+    </div>
+
+    <script type="text/javascript">
+        function hitung(){
+            alas =document.getElementById("alas").value;
+            tinggi = document.getElementById("tinggi").value;
+            luas = (alas*tinggi)*0.5;
+            document.getElementById("luas").value=luas;
+        }
+    </script>
+</body>
+</html>
